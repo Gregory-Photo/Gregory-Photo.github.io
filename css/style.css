@@ -167,8 +167,7 @@
 	max-height: 500px;
 	margin-right: auto;
 	margin-left: auto;
-	-webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
-	clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+	
 	transition: .3s linear;
 }
 
@@ -224,19 +223,5 @@
 	.carousel-control-prev-icon,
 	.carousel-control-next-icon {
 		display: none;
-	}
-
-	.custom-img {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-		transition: .3s linear;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.custom-img {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-		transition: .3s linear;
 	}
 }
