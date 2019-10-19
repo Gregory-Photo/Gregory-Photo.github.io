@@ -167,7 +167,7 @@
 	max-height: 500px;
 	margin-right: auto;
 	margin-left: auto;
-	
+	border-radius: 30px;
 	transition: .3s linear;
 }
 
