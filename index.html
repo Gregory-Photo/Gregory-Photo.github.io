@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<link rel="stylesheet" type="text/css" href="reset.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <script type="text/javascript" src="fontawesome/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/js.js"></script>
+
     <title>Hello, world!</title>
   </head>
   <body>
-
   	<header>
-  		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <h1 class="navbar-brand">Navbar</h1>
+	  	<nav class="navbar navbar-expand-lg navbar-dark custom-bg">
+		  <a class="navbar-brand" href="#">Your logo</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -31,7 +34,7 @@
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Dropdown
+		          Dropdown <i class="fa fa-angle-down"></i>
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="#">Action</a>
@@ -41,23 +44,128 @@
 		        </div>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Disabled</a>
+		        <a class="nav-link" href="#">Link</a>
 		      </li>
 		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <a href="#" class="btn btn-custom">Something</a>
+		    </form>
 		  </div>
 		</nav>
-  	</header>
-   
-   	<section class="sec1">
-   		<div class="main-sec w-100 h-100">
-   			
-   		</div>
-   	</section>
+	</header>
+
+    <scetion class="sec1">
+    	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item it-1 active">
+		      <div class="cut"></div>
+		    </div>
+		    <div class="carousel-item it-2">
+		      <div class="cut"></div>
+		    </div>
+		    <div class="carousel-item it-3">
+		      <div class="cut"></div>
+		    </div>
+
+		    <div class="central-slider-text text-center">
+		    	<div class="circled-image">
+		    		<img src="images/irin.jpg" alt="Ирина Решетняк" class="main-img mt-3 mb-3">
+		    	</div>
+		    	<div class="centred-text pb-3 ">
+		    		<hr class="text-slicer">
+		    		<h1 class="pb-3 pr-3 pl-3">Some heading right here</h1>
+		    		<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, at doloribus officiis placeat dignissimos amet error possimus explicabo, numquam excepturi optio nihil in quis quae maxime, itaque aliquam!</p>
+		    	</div>
+		    </div>
+
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+    </scetion>
+
+    <section class="sec2 container-fluid">
+
+    	<div class="marketing">
+
+    		<div class="row">
+    			<div class="col-12 text-muted text-center">
+    				<h1><strong>Heading of section #1</strong></h1>
+    			</div>
+    				
+    			<div class="col-12 col-sm-8 col-md-6 col-xl-6 order-1 order-sm-1 order-md-2 order-xl-2 text-center d-block mx-auto">
+					<img src="images/me.jpg" alt="Irina Reshetnyak" class="custom-img mt-4 float-xl-left ml-xl-5 pl-xl-5 float-none">
+    			</div>
+
+    			<div class="col-12 col-sm-12 col-md-6 col-xl-6 text-center order-2 order-sm-2 order-md-1 order-xl-1">
+    				<div class="float-xl-right mr-xl-5 pr-xl-5">
+	    				<div class="blue-points ball-list mt-4">
+							<div class="col-12">
+								<h2>My work</h1>
+								<hr class="text-slicer">
+							</div>
+							<div class="inline pt-2">
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fas fa-globe"></i></a>
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fas fa-globe"></i></a>	
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fas fa-globe"></i></a>	
+							</div>
+							
+						</div>
+
+						<div class="green-points ball-list mt-4">
+							<div class="col-12">
+								<h2>My hobbies</h1>
+								<hr class="text-slicer">
+							</div>
+							<div class="inline justify-content-center pt-2">
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fas fa-globe"></i></a>	
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fas fa-globe"></i></a>	
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fas fa-globe"></i></a>	
+							</div>
+							
+						</div>
+
+						<div class="orange-points ball-list mt-4">
+							<div class="col-12">
+								<h2>My goal</h1>
+								<hr class="text-slicer">
+							</div>
+							<div class="inline pt-2">
+								<a href="#" data-toggle2="tooltip" title="some text"><i class="fad fa-star"></i></a>
+
+								<p class="text-center mt-4 small-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero magnam in, ex voluptas adipisci ratione numquam, quaerat hic, repellendus amet enim omnis unde reiciendis consequuntur est repellat! Quos, vel!</p>
+							</div>
+							
+						</div>
+    				</div>
+					
+					
+
+    			</div>
+    		</div>
+
+    	</div>
+
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+    <script>
+    	$( function( )
+    	{
+    		$( "[data-toggle2='tooltip']").tooltip( );
+    	} );
+    </script>
   </body>
 </html>
