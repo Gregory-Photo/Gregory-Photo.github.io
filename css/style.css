@@ -188,21 +188,35 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; 
 	cursor: pointer;
-	padding: .75em .85em;
 	margin:1em;
 	border-radius:50%;
-	font-size: 20px;
 	color:white;
 }
 
 .blue-points .inline > span {
+	font-size: 23px;
+	padding: .78em .78em;
 	background:#4272FB;
-
 }
+
+.blue-points .inline > span:nth-child(2) {
+	font-size: 23px;
+	padding: .78em 1.15em;
+}
+
+
 .green-points .inline > span {
+	font-size: 23px;
+	padding: .75em .85em;
 	background:#8DB600 ;
 }
+.green-points .inline > span:nth-child(2),
+.green-points .inline > span:nth-child(3) {
+	padding: .75em ;
+}
 .orange-points .inline > span {
+	font-size: 30px;
+	padding: .5em .6em;
 	background:#FFA812 ;
 }
 
