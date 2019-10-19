@@ -76,7 +76,8 @@
 	transition: .3s linear;
 }
 
-.btn-custom:hover {
+.btn-custom:hover , .btn-custom:focus {
+	background: darkblue!important;
 	color:white;
 	width: 10em;
 }
